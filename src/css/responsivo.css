@@ -1,0 +1,124 @@
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header section {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header section {
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header section nav {
+        display: flex;
+        gap: 15px;
+    }
+
+    .header section nav a {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    .caixa-principal div h3 {
+        font-size: 4.5rem;
+    }
+
+    .caixa-principal div p {
+        font-size: 1.8rem;
+    }
+
+    .titulo {
+        font-size: 3.5rem;
+    }
+
+    .caixa-sobre .sobre-container {
+        flex-direction: column;
+    }
+
+    .caixa-sobre .sobre-container .sobre-imagem,
+    .caixa-sobre .sobre-container .sobre-texto {
+        flex: 1 1 100%;
+    }
+
+    .modal {
+        width: 90%;
+    }
+
+    .modal iframe {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header section nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa-principal div h3 {
+        font-size: 3.5rem;
+    }
+
+    .caixa-principal div p {
+        font-size: 1.6rem;
+    }
+
+    .botao-link {
+        padding: 0.8rem 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .caixa-sobre .sobre-container .sobre-texto h3 {
+        font-size: 2.5rem;
+    }
+
+    .modal iframe {
+        height: 300px;
+    }
+}
+
+/* Ajustes para o Modal em diferentes telas */
+@media (min-width: 769px) {
+    .modal.ativo {
+        left: 50%;
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal.ativo {
+        left: 50%;
+        width: 90%;
+    }
+}
+
+/* Ajustes de acessibilidade para telas muito pequenas */
+@media (max-width: 350px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header section a img {
+        height: 5rem;
+    }
+}

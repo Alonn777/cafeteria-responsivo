@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./src/videos/coffe.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a>
+                <img src="./src/img-20241112T172627Z-001/img/logo.png" alt="logo">
+            </a>
+
+            <nav>
+                <a href="#"> Home</a>
+                <a href="#"> Sobre </a>
+                <a href="#" onclick="mostrarModal()"> Endereço </a>
+
+
+            </nav>
+        </section>
+    </header>
+
+    <section class="caixa-principal">
+        <div>
+            <h3>Conheça o melhor café da região</h3>
+            <p>Sinta o sabor unico deste café com uma fragancia forte e iconica com um sabor refinado classico do café verdeiro, original e bem produzido</p>
+            <a class="botao-link"> Pague o seu agora</a>
+        </div>
+    </section>
+
+    <section class="caixa-sobre">
+        <h2 class="titulo">
+            <span>Sobre</span> Nós
+        </h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="./src/img-20241112T172627Z-001/img/about-img.jpeg" alt="cafe imagem">
+            </div>
+
+            <div class="sobre-texto">
+                <h3>o que faz nosso cafe especial ?</h3>
+                <p>Nosso café e incrivel e especial, o nosso grão e colhido e produzido com um padrão de qualidade unico e inovador! </p>
+                <p> A produção ocorre nos campos paulistas a terra do café, la deixamos o café em um comodo unico com estufas, adubo e etc apenas para o café crescer, contratamos árabes primeiro local onde surgiu o café e estes árabes aprenderam de geração e geração esta formula unica de produção</p>
+                <a class="botao-link"> saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <h3 class="titulo">
+            <span>Nosso </span> Endereço
+        </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30669.904943555794!2d-47.984579!3d-16.0790739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a258b35fc9bf9%3A0xb67c0544aee9ea32!2sGo%20Coffee%20-%20Shopping%20Sul!5e0!3m2!1spt-BR!2sbr!4v1731538546476!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+ <div class="mascara-modal" onclick="esconderModal()"></div>
+
+ <script src="./src/js/script.js"></script>
+</body>
+
+
+</html>
